@@ -1,3 +1,4 @@
+Not using GitHub? Find me on [LinkedIn](https://www.linkedin.com/in/cuong9/)!
 ![banner](./images/banner.png)
 
 🐹 go is the programming language I want to 🛶 conquer next 🌍.
@@ -145,8 +146,10 @@ func main() {
 		name string = "Cuong Duy Nguyen"
 		age int = 21
 	)
-	fmt.Printf("type: %T, value: %v\n", name, name)
-	fmt.Printf("type: %T, value: %v\n", age, age)
+	fmt.Printf("type: %T, value: %v
+", name, name)
+	fmt.Printf("type: %T, value: %v
+", age, age)
 }
 ```
 
@@ -399,26 +402,31 @@ func main() {
 	// 3. slice length & capacity
 	// The capacity of a slice is the number of elements in the underlying array, counting from the first element in the slice.
 	s := []int{2, 3, 5, 7, 11, 13}
-	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
+	fmt.Printf("len=%d cap=%d %v
+", len(s), cap(s), s)
 	// len=6 cap=6 [2 3 5 7 11 13]
 
 	// 4. slice the slice to give it zero length.
 	s = s[:1]
-	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
+	fmt.Printf("len=%d cap=%d %v
+", len(s), cap(s), s)
 	// len=1 cap=6 [2]
 
 	// Extend its length.
 	s = s[:2]
-	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
+	fmt.Printf("len=%d cap=%d %v
+", len(s), cap(s), s)
 	// len=2 cap=6 [2 3]
 
 	// Drop its first two values.
 	s = s[2:]
-	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
+	fmt.Printf("len=%d cap=%d %v
+", len(s), cap(s), s)
 	// len=0 cap=4 []
 
 	s = s[:4]
-	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
+	fmt.Printf("len=%d cap=%d %v
+", len(s), cap(s), s)
 	// len=4 cap=4 [5 7 11 13]
 
 	// 5. nil slices
@@ -431,29 +439,35 @@ func main() {
 
 	// 6. Creating a slice with make
 	x := make([]int, 10)
-	fmt.Printf("%d %d %v \n", len(x), cap(x), x)
+	fmt.Printf("%d %d %v 
+", len(x), cap(x), x)
 	// 10 10 [0 0 0 0 0 0 0 0 0 0]
 
 	y := make([]int, 0, 5)
-	fmt.Printf("%d %d %v \n", len(y), cap(y), y)
+	fmt.Printf("%d %d %v 
+", len(y), cap(y), y)
 	// 0 5 []
 
 	z := y[:5]
-	fmt.Printf("%d %d %v \n", len(z), cap(z), z)
+	fmt.Printf("%d %d %v 
+", len(z), cap(z), z)
 	// 5 5 [0 0 0 0 0]
 
 	// 7. Appending to a slice
 	// cap will auto scale up depend on the added elements
 	m := []int{}
-	fmt.Printf("len=%d cap=%d %v\n", len(m), cap(m), m)
+	fmt.Printf("len=%d cap=%d %v
+", len(m), cap(m), m)
 	// len=0 cap=0 []
 
 	m = append(m, 6, 5)
-	fmt.Printf("len=%d cap=%d %v\n", len(m), cap(m), m)
+	fmt.Printf("len=%d cap=%d %v
+", len(m), cap(m), m)
 	// len=2 cap=2 [6 5]
 
 	m = append(m, 1, 2, 5, 6, 8, 9, 3)
-	fmt.Printf("len=%d cap=%d %v\n", len(m), cap(m), m)
+	fmt.Printf("len=%d cap=%d %v
+", len(m), cap(m), m)
 	// len=9 cap=10 [6 5 1 2 5 6 8 9 3]
 
 	// 8. range
@@ -488,10 +502,12 @@ type Point struct {
 func main() {
 	// 1. Basic
 	var m map[string]Point = make(map[string]Point)
-	fmt.Printf("%v \n", m) // map[]
+	fmt.Printf("%v 
+", m) // map[]
 	m["L"] = Point{6, 9}
 	m["T"] = Point{0, 1}
-	fmt.Printf("%v %v \n", m, m["T"]) // map[L:{6 9} T:{0 1}] {0 1}
+	fmt.Printf("%v %v 
+", m, m["T"]) // map[L:{6 9} T:{0 1}] {0 1}
 
 	// 2. Map literals
 	t := map[string]Point{
@@ -499,7 +515,8 @@ func main() {
 		"bar": Point {5, 6},
 		"taz": {10, 20}, // shorthand Struct
 	}
-	fmt.Printf("%v \n", t)// map[bar:{5 6} foo:{3 1}]
+	fmt.Printf("%v 
+", t)// map[bar:{5 6} foo:{3 1}]
 
 	// 3. Mutating maps
 	list := map[int]int {
@@ -507,13 +524,16 @@ func main() {
 		2: 100,
 		3: 1000,
 	}
-	fmt.Printf("%v\n", list) // map[1:10 2:100 3:1000]
+	fmt.Printf("%v
+", list) // map[1:10 2:100 3:1000]
 	// insert an element
 	list[4] = 10000
-	fmt.Printf("%v\n", list) // map[1:10 2:100 3:1000 4:10000]
+	fmt.Printf("%v
+", list) // map[1:10 2:100 3:1000 4:10000]
 	// delete an element
 	delete(list, 4)
-	fmt.Printf("%v\n", list) // map[1:10 2:100 3:1000]
+	fmt.Printf("%v
+", list) // map[1:10 2:100 3:1000]
 	// test that a key is present
 	elem, ok := list[4]
 	fmt.Println(elem, ok) // 0 false
