@@ -1,7 +1,4 @@
-Not using GitHub? Find me on [LinkedIn](https://www.linkedin.com/in/cuong9/)!
-![banner](./images/banner.png)
-
-🐹 go is the programming language I want to 🛶 conquer next 🌍.
+### 🐹 go is the programming language I want to 🛶 conquer next 🌍.
 
 <img align="right" width="100" height="100" src="./images/go.gif">
 
@@ -669,4 +666,4 @@ func main() {
 
 <h2>🚧 license</h2>
 
-MIT © [Cuong Tran](https://github.com/103cuong)
+MIT © [Cuong Nguyen](https://www.linkedin.com/in/cuongndc9)
